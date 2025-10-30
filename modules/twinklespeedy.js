@@ -341,10 +341,18 @@ Twinkle.speedy.data = [
 	},
 	{
 		list: 'userList',
-		label: 'U5: A non-contributor misusing Wikipedia as a web host',
+		label: 'U6: Abandoned user subpage of a non-contributor',
+		code: 'u6',
+		db: 'u6',
+		tooltip: 'User subpages of users who have made few or no edits outside of user space, which have not been edited by a human in at least six months, excluding redirects, .js pages, .css pages, and Wikipedia Books. Promising drafts may be moved to draftspace by any editor as an alternative to deletion.',
+		hideWhenRedirect: true
+	},
+	{
+		list: 'userList',
+		label: 'U7. Excessively unrelated non-draft subpages by non-contributors',
 		code: 'u5',
 		db: 'notwebhost',
-		tooltip: 'Pages in userspace consisting of writings, information, discussions, or activities not closely related to Wikipedia\'s goals, where the owner has made few or no edits outside of user pages, except for plausible drafts and pages adhering to WP:UPYES. It applies regardless of the age of the page in question.',
+		tooltip: 'User subpages of users who have made few or no edits outside of user space, were created more than six months ago, could not be interpreted as draft articles (even very bad ones), and consist entirely of: a. Creative or persuasive writing unrelated to Wikipedia (e.g. fan fictions or political essays), b. Lengthy descriptions of a person\'s professional accomplishments that are written in the first person or are formatted like a résumé or curriculum vitae, and do not serve as paid-contribution disclosures, c. Lengthy content about the user\'s personal life, things in their environment (e.g. friends, pets, or belongings), or things they have invented, d. Links to websites that are primarily commercial in nature',
 		hideWhenRedirect: true
 	},
 	{
